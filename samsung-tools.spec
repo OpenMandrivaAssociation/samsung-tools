@@ -1,11 +1,13 @@
 Name:		samsung-tools
 Version:	2.1
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Configuration/Hardware
 URL:		https://launchpad.net/samsung-tools
 Source0:	http://launchpad.net/samsung-tools/trunk/2.1/+download/%{name}-%{version}.tar.gz
 Summary:	Tools for Samsung laptops
+
+%define debug_package %{nil}
 
 %description
 Tools for Samsung netbooks.
@@ -25,7 +27,6 @@ like the CPU undervolting
 %setup -q
 
 %build
-echo "Hello Mandriva"
 #make
 
 %install
@@ -44,14 +45,3 @@ echo "Hello Mandriva"
 %{_datadir}/applications/%{name}-preferences.desktop
 %{_datadir}/dbus-1/*/*
 %{_prefix}/lib/%{name}
-
-
-%changelog
-* Sun Mar 25 2012 Alexander Khrukin <akhrukin@mandriva.org> 2.1-1
-+ Revision: 786722
-- version update 2.1
-
-* Fri Nov 11 2011 Alexander Khrukin <akhrukin@mandriva.org> 1.5-1
-+ Revision: 730198
-- imported package samsung-tools
-
