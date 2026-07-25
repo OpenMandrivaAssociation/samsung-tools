@@ -4,7 +4,7 @@
 
 Name:		samsung-tools
 Version:	2.3.1
-Release:	%mkrel 7
+Release:	8
 Summary:	Tools for Samsung laptops
 License:	GPLv2+
 Group:		System/Configuration
